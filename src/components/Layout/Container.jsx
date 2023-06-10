@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "@nextui-org/react";
-import { ContainerFullWidthStyles, ContainerMaxWidthStyles } from "./styles";
+import { ContainerFullWidthStyles, ContainerMaxWidthStyles } from "../styles";
 
 const PageContainer = ({ children }) => {
   return (
