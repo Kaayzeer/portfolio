@@ -5,7 +5,7 @@ import { ContainerFullWidthStyles, ContainerMaxWidthStyles } from "../styles";
 const PageContainer = ({ children }) => {
   return (
     <Container fluid css={ContainerFullWidthStyles}>
-      <Container xl css={ContainerMaxWidthStyles}>
+      <Container md css={ContainerMaxWidthStyles}>
         {children}
       </Container>
     </Container>

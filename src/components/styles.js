@@ -1,22 +1,29 @@
 export const ContainerFullWidthStyles = {
   minWidth: "100%",
   bg: "blue",
-  "@lg": {
-    bg: "red",
-  },
 };
 
 export const ContainerMaxWidthStyles = {
   display: "flex",
-  justifyContent: "center",
+  justifyContent: "space-between",
   alignItems: "center",
   flexDirection: "column",
   gap: "1rem",
   bg: "green",
-
-  "@lg": {
+  padding: "1rem 0rem",
+  "@md": {
     gap: "2rem",
     flexDirection: "row",
-    bg: "yellow",
+    bg: "purple",
+    bg: "red",
+    padding: "1.25rem 0rem",
+  },
+  "@lg": {
+    bg: "red",
+    padding: "1.5rem 0rem",
+  },
+  "@xl": {
+    bg: "red",
+    padding: "2rem 0rem",
   },
 };
