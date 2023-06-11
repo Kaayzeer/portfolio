@@ -1,8 +1,15 @@
-import { Col, Text, Row, Container } from "@nextui-org/react";
+import { Col, Text, Row, css } from "@nextui-org/react";
 import Image from "next/image";
 import TypeIt from "typeit-react";
-import HeroPic from "../../../public/images/heroPic.png";
+import HeroPic from "../../../../public/images/heroPic.png";
 import { dimensions } from "@/styles/styles";
+import {
+  WrapperStyles,
+  GreetingStyles,
+  HeadingStyles,
+  HeroPicStyles,
+  ColStyles,
+} from "./styles";
 
 const DEVELOPER_TYPE = {
   GREETING: "Hello I am",
@@ -12,64 +19,6 @@ const DEVELOPER_TYPE = {
   WEB: "Web Developer",
 };
 
-const ColStyles = {
-  width: "100%",
-  height: "100%",
-  display: "grid",
-  placeItems: "center",
-  /*  "@xs": {
-    placeItems: "end",
-  }, */
-
-  margin: "auto",
-};
-const GreetingStyles = {
-  width: "fit-content",
-  padding: ".25rem .5rem",
-  borderRadius: ".5rem .5rem .5rem 0rem",
-  background: "pink",
-  fontSize: "1rem",
-  "@md": {
-    fontSize: "1rem",
-  },
-  "@lg": {
-    fontSize: "1.5rem",
-  },
-  "@xl": {
-    fontSize: "2rem",
-  },
-};
-const HeadingStyles = {
-  letterSpacing: "1px",
-  fontWeight: 700,
-  fontSize: "2.2rem",
-  "@sm": {
-    fontSize: "3.5rem",
-  },
-  "@lg": {
-    fontSize: "4.5rem",
-  },
-  "@xl": {
-    fontSize: "5.5rem",
-  },
-};
-
-const WrapperStyles = {
-  gap: "1rem",
-  flexDirection: "column",
-  "@xs": {
-    flexDirection: "row",
-    gap: "2rem",
-  },
-};
-
-const HeroPicStyles = {
-  width: "100%",
-  height: "auto",
-  clipPath:
-    "polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)",
-};
-
 const Hero = () => {
   return (
     <Row css={WrapperStyles}>
@@ -77,6 +26,9 @@ const Hero = () => {
         <Col
           css={{
             width: "100%",
+            "@xs": {
+              marginLeft: "auto",
+            },
           }}
         >
           <Text css={GreetingStyles} as="div">
@@ -116,13 +68,12 @@ const Hero = () => {
           </Text>
         </Col>
       </Col>
-      <Col css={ColStyles}>
-        <Row
+      <Row style={ColStyles}>
+        <Text
+          as="div"
           css={{
+            position: "relative",
             width: "100%",
-            "@xs": {
-              width: "60%",
-            },
           }}
         >
           <Image
@@ -131,10 +82,10 @@ const Hero = () => {
             alt="hero-picture"
             style={HeroPicStyles}
             placeholder="blur"
-            sizes={`(min-width: ${dimensions.mobile}) 40vw, 100vw`}
+            sizes={`(min-width: ${dimensions.laptop}) 40vw, 100vw`}
           />
-        </Row>
-      </Col>
+        </Text>
+      </Row>
     </Row>
   );
 };
