@@ -10,7 +10,7 @@ const Landing = () => {
         <Hero />
       </Container>
 
-      <Container>
+      <Container cols="1">
         <Skills />
       </Container>
     </Layout>

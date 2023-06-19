@@ -1,23 +1,5 @@
-export const ColStyles = {
-  width: "50%",
-  height: "50%",
-  display: "grid",
-  placeItems: "center",
-  "@sm": {
-    placeItems: "end",
-  },
-
-  margin: "auto",
-};
-
-export const WrapperStyles = {
+export const ArticleStyles = {
   width: "100%",
-  gap: "1rem",
-  flexDirection: "column",
-  "@sm": {
-    flexDirection: "row",
-    gap: "2rem",
-  },
 };
 
 export const GreetingStyles = {
@@ -38,24 +20,28 @@ export const GreetingStyles = {
 };
 export const HeadingStyles = {
   letterSpacing: "1px",
-  fontWeight: 700,
+  fontWeight: 800,
   fontSize: "2.2rem",
-  "@sm": {
-    fontSize: "3.5rem",
+  "@md": {
+    fontSize: "2.25rem",
+    lineHeight: "3rem",
   },
   "@lg": {
     fontSize: "3rem",
     lineHeight: "3.75rem",
-    fontWeight: 800,
   },
   "@xl": {
     fontSize: "3.75rem",
     lineHeight: "4.5rem",
-    fontWeight: 800,
   },
 };
 
 export const HeroPicStyles = {
   width: "100%",
   height: "auto",
+};
+
+export const ImageContainerStyles = {
+  position: "relative",
+  width: "100%",
 };

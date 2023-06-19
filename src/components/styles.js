@@ -3,30 +3,30 @@ export const ContainerFullWidthStyles = {
   bg: "blue",
 };
 
-export const ContainerMaxWidthStyles = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  flexDirection: "column",
-  gap: "1rem",
-  bg: "green",
-  padding: "3rem 1.5rem",
-  "@md": {
-    gap: "2rem",
-    flexDirection: "row",
-    justifyContent: "center",
-    bg: "purple",
-    bg: "red",
-    padding: "5rem 2.5rem",
-  },
-  "@lg": {
-    bg: "red",
-    padding: "5rem 7rem",
-  },
-  "@xl": {
-    bg: "red",
-    padding: "6rem 7rem",
-  },
+export const ContainerMaxWidthStyles = (cols = 2) => {
+  return {
+    display: "grid",
+    placeItems: "center",
+    gap: "1rem",
+    bg: "green",
+    padding: "3rem 1.5rem",
+    "@xs": {
+      gridTemplateColumns: `repeat(${cols},1fr)`,
+      gap: "2rem",
+      justifyContent: "space-between",
+      bg: "purple",
+      bg: "red",
+      padding: "5rem 2.5rem",
+    },
+    "@lg": {
+      bg: "red",
+      padding: "5rem 7rem",
+    },
+    "@xl": {
+      bg: "red",
+      padding: "6rem 7rem",
+    },
+  };
 };
 
 /*   sm: '6rem 2.5rem',
