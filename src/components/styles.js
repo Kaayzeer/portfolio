@@ -28,9 +28,3 @@ export const ContainerMaxWidthStyles = (cols = 2) => {
     },
   };
 };
-
-/*   sm: '6rem 2.5rem',
-      md: '4rem 7rem',
-      lg: '5rem 7rem',
-      xl: '6rem 7rem',
-      '2xl': '8rem 7rem', */

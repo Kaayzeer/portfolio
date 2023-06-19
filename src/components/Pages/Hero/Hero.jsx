@@ -2,7 +2,7 @@ import { Col, Text, Row, css } from "@nextui-org/react";
 import Image from "next/image";
 import TypeIt from "typeit-react";
 import HeroPic from "../../../../public/images/heroPic.png";
-import { dimensions } from "@/styles/styles";
+import { responsive } from "@/styles/styles";
 import {
   GreetingStyles,
   HeadingStyles,
@@ -67,7 +67,7 @@ const Hero = () => {
           alt="hero-picture"
           style={HeroPicStyles}
           placeholder="blur"
-          sizes={`(min-width: ${dimensions.laptop}) 40vw, 100vw`}
+          sizes={`(min-width: ${responsive.laptop}) 40vw, 100vw`}
         />
       </Text>
     </>

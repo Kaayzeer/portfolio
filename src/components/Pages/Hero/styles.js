@@ -22,15 +22,15 @@ export const HeadingStyles = {
   letterSpacing: "1px",
   fontWeight: 800,
   fontSize: "2.2rem",
-  "@md": {
+  "@sm": {
     fontSize: "2.25rem",
     lineHeight: "3rem",
   },
-  "@lg": {
+  "@md": {
     fontSize: "3rem",
     lineHeight: "3.75rem",
   },
-  "@xl": {
+  "@lg": {
     fontSize: "3.75rem",
     lineHeight: "4.5rem",
   },
