@@ -5,45 +5,55 @@ import { Card, Grid, Text } from "@nextui-org/react";
 const skillCards = {
   Technologies: {
     icons: [
-      <Avatars type="react" />,
+      <Avatars type="html" />,
+      <Avatars type="css" />,
       <Avatars type="javaScript" />,
       <Avatars type="next" />,
       <Avatars type="typeScript" />,
       <Avatars type="mongo" />,
       <Avatars type="node" />,
-      <Avatars type="firebase" />,
+      <Avatars type="express" />,
     ],
     texts: [
-      "React",
+      "Html5",
+      "css3",
       "JavaScript",
       "Next",
       "Typescript",
       "MongoDB",
-      "NodeJs",
-      "FirebaseIcon",
+      "Node.js",
+      "Express.js",
     ],
   },
   Tools: {
-    icons: ["figmaIcon", "postmanIcon", "githubIcon", "gitIcon", "linuxIcon"],
-    texts: ["figma", "Postman", "Github", "Git", "Linux"],
+    icons: [
+      <Avatars type="figma" />,
+      <Avatars type="postman" />,
+      <Avatars type="github" />,
+      <Avatars type="git" />,
+      <Avatars type="linux" />,
+      <Avatars type="vercel" />,
+      <Avatars type="firebase" />,
+    ],
+    texts: ["Figma", "Postman", "Github", "Git", "Linux", "Vercel", "Firebase"],
   },
   Libraries: {
     icons: [
-      "ReduxIcon",
-      "Tailwind.css",
-      "SASS",
-      "NextUI",
-      "styled-components",
-      "express.js",
-      "andDesign",
+      <Avatars type="react" />,
+      <Avatars type="redux" />,
+      <Avatars type="tailwind" />,
+      <Avatars type="sass" />,
+      <Avatars type="next" />,
+      <Avatars type="styled" />,
+      <Avatars type="ant" />,
     ],
     texts: [
+      "React",
       "Redux",
       "Tailwind.css",
       "SASS",
       "NextUI",
       "styled-components",
-      "express.js",
       "andDesign",
     ],
   },
@@ -52,7 +62,7 @@ const skillCards = {
 const Skills = () => {
   return (
     <>
-      <Text h3>Tools and Technologies</Text>
+      <Text h3>Skills</Text>
 
       <Grid.Container gap={2}>
         {Object.entries(skillCards).map((key) => {
