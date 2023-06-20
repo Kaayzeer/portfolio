@@ -1,4 +1,4 @@
-import { Col, Text, Row, css } from "@nextui-org/react";
+import { Text } from "@nextui-org/react";
 import Image from "next/image";
 import TypeIt from "typeit-react";
 import HeroPic from "../../../../public/images/heroPic.png";

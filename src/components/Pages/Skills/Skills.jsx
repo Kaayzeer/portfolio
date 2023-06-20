@@ -1,6 +1,5 @@
 import {
   TextWrapper,
-  InnerWrapper,
   HeadingStyles,
   CardHeadingStyles,
   CardBodyStyles,

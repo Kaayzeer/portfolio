@@ -13,7 +13,7 @@ export const ContainerMaxWidthStyles = (cols = 2) => {
     "@xs": {
       gridTemplateColumns: `repeat(${cols},1fr)`,
       gap: "2rem",
-      justifyContent: "space-between",
+
       bg: "purple",
       bg: "red",
       padding: "5rem 2.5rem",

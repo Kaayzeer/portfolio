@@ -43,7 +43,6 @@ export const CardHeadingStyles = {
 };
 
 export const CardBodyStyles = {
-  display: "inline-block",
   textAlign: "center",
   letterSpacing: "1px",
   fontWeight: 300,
