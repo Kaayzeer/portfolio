@@ -7,7 +7,7 @@ export const ContainerMaxWidthStyles = (cols = 2) => {
   return {
     display: "grid",
     placeItems: "center",
-    gap: "1rem",
+    gap: "rem",
     bg: "green",
     padding: "3rem 1.5rem",
     "@xs": {

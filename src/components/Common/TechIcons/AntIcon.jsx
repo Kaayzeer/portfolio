@@ -12,8 +12,8 @@ export const AntIcon = () => (
       y1="0%"
       y2="37.863576%"
     >
-      <stop offset="0" stop-color="#4285eb" />
-      <stop offset="1" stop-color="#2ec7ff" />
+      <stop offset="0" stopColor="#4285eb" />
+      <stop offset="1" stopColor="#2ec7ff" />
     </linearGradient>
     <linearGradient
       id="b"
@@ -22,9 +22,9 @@ export const AntIcon = () => (
       y1="0%"
       y2="108.456714%"
     >
-      <stop offset="0" stop-color="#29cdff" />
-      <stop offset=".378600687" stop-color="#148eff" />
-      <stop offset="1" stop-color="#0a60ff" />
+      <stop offset="0" stopColor="#29cdff" />
+      <stop offset=".378600687" stopColor="#148eff" />
+      <stop offset="1" stopColor="#0a60ff" />
     </linearGradient>
     <linearGradient
       id="c"
@@ -33,9 +33,9 @@ export const AntIcon = () => (
       y1="-12.974359%"
       y2="117.391248%"
     >
-      <stop offset="0" stop-color="#fa816e" />
-      <stop offset=".41472606" stop-color="#f74a5c" />
-      <stop offset="1" stop-color="#f51d2c" />
+      <stop offset="0" stopColor="#fa816e" />
+      <stop offset=".41472606" stopColor="#f74a5c" />
+      <stop offset="1" stopColor="#f51d2c" />
     </linearGradient>
     <linearGradient
       id="d"
@@ -44,9 +44,9 @@ export const AntIcon = () => (
       y1="-35.690574%"
       y2="114.942679%"
     >
-      <stop offset="0" stop-color="#fa8e7d" />
-      <stop offset=".512635191" stop-color="#f74a5c" />
-      <stop offset="1" stop-color="#f51d2c" />
+      <stop offset="0" stopColor="#fa8e7d" />
+      <stop offset=".512635191" stopColor="#f74a5c" />
+      <stop offset="1" stopColor="#f51d2c" />
     </linearGradient>
     <g fill="none">
       <path

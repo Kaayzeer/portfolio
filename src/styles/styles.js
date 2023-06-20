@@ -1,6 +1,6 @@
 export const responsive = {
-  mobile: "23.5rem",
-  tablet: "48rem",
-  laptop: "75rem",
-  desktop: "112rem",
+  mobile: "(min-width: 23.5rem)",
+  tablet: "(min-width: 48rem)",
+  laptop: "(min-width: 75rem)",
+  desktop: "(min-width: 112rem)",
 };

@@ -5,13 +5,15 @@ export const HeadingStyles = {
   "@sm": {
     fontSize: "1.75rem",
     lineHeight: "2.5rem",
+    "&:nth-child(odd)": {
+      justifySelf: "flex-start",
+    },
   },
   "@md": {
-    fontSize: "2.25rem",
+    fontSize: "1.8rem",
     lineHeight: "3rem",
   },
   "@lg": {
-    fontSize: "2.5rem",
     lineHeight: "3.5rem",
   },
 };
@@ -21,13 +23,35 @@ export const ImageContainerStyles = {
   width: "100%",
 };
 
-export const HeroPicStyles = {
+export const ImageStyles = {
   width: "100%",
   height: "auto",
+  borderRadius: ".875rem",
 };
 
-export const ArticleStyles = {
+export const ArticleStylesEven = {
   display: "grid",
-  placeItems: "center",
   width: "100%",
+
+  "@sm": {
+    padding: "0rem 2rem 0rem 0rem",
+  },
+
+  "@lg": {
+    padding: "0rem 4rem 0rem 0rem",
+  },
+};
+
+export const ArticleStylesOdd = {
+  display: "grid",
+  width: "100%",
+  padding: "0rem 0rem 2rem .2rem",
+
+  "@sm": {
+    padding: "0rem 0rem 0rem 2rem",
+  },
+
+  "@lg": {
+    padding: "0rem 0rem 0rem 4rem",
+  },
 };
