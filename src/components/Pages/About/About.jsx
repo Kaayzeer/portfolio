@@ -12,6 +12,7 @@ import {
   ArticleStyles,
   ImageContainerStyles,
   ImageStyles,
+  SubTitleStyles,
 } from './styles';
 import { STRING_TYPES } from '@/components/strings';
 
@@ -36,6 +37,9 @@ const About = () => {
           />
         </Text>
         <Text as='div' css={ArticleStyles}>
+          <Text h3 css={SubTitleStyles}>
+            {STRING_TYPES.ABOUT_SUBTITLE}
+          </Text>
           <Text>{STRING_TYPES.ABOUT_BODY}</Text>
         </Text>
       </PageContainer>

@@ -19,7 +19,7 @@ export const HeadingStyles = {
 
 export const CardTitleStyles = {
   letterSpacing: '1px',
-  fontWeight: 800,
+  fontWeight: 600,
   fontSize: '1.5rem',
 
   '@sm': {

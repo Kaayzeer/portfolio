@@ -25,7 +25,7 @@ const isTabletReverseRow = (experience, index, isTablet) => {
       {isTablet && index % 2 !== 0 ? (
         <>
           <Text as='div' css={ArticleStylesOdd}>
-            <Text h3 css={CardTitleStyles}>
+            <Text h4 css={CardTitleStyles}>
               {experience.title}
             </Text>
             <Text>{experience.body}</Text>
@@ -61,7 +61,7 @@ const isTabletReverseRow = (experience, index, isTablet) => {
             />
           </Text>
           <Text as='div' css={ArticleStylesEven}>
-            <Text h3 css={CardTitleStyles}>
+            <Text h4 css={CardTitleStyles}>
               {experience.title}
             </Text>
             <Text>{experience.body}</Text>

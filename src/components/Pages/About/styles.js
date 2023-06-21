@@ -49,3 +49,24 @@ export const ImageStyles = {
   height: 'auto',
   borderRadius: '.875rem',
 };
+
+export const SubTitleStyles = {
+  letterSpacing: '1px',
+  fontWeight: 600,
+  fontSize: '1.5rem',
+
+  '@sm': {
+    fontSize: '1.75rem',
+    lineHeight: '2.5rem',
+    '&:nth-child(odd)': {
+      justifySelf: 'flex-start',
+    },
+  },
+  '@md': {
+    fontSize: '1.8rem',
+    lineHeight: '3rem',
+  },
+  '@lg': {
+    lineHeight: '3.5rem',
+  },
+};
