@@ -1,21 +1,16 @@
-import Hero from "@/components/Pages/Hero/Hero.jsx";
-import Experience from "@/components/Pages/Experience/Experience.jsx";
-import Skills from "@/components/Pages/Skills/Skills.jsx";
-import Layout from "@/components/Layout/Layout.jsx";
-import Container from "@/components/Layout/Container";
+import Hero from '@/components/Pages/Hero/Hero.jsx';
+import Experience from '@/components/Pages/Experience/Experience.jsx';
+import Skills from '@/components/Pages/Skills/Skills.jsx';
+import About from '@/components/Pages/About/About.jsx';
+import Layout from '@/components/Layout/Layout.jsx';
 
 const Landing = () => {
   return (
     <Layout>
-      <Container>
-        <Hero />
-      </Container>
-      <Container cols="1">
-        <Skills />
-      </Container>
-      <Container>
-        <Experience />
-      </Container>
+      <Hero />
+      <Skills />
+      <Experience />
+      <About />
     </Layout>
   );
 };

@@ -3,13 +3,14 @@ import {
   HeadingStyles,
   CardHeadingStyles,
   CardBodyStyles,
-} from "./styles";
-import { Card, Grid, Text } from "@nextui-org/react";
-import { skillCards } from "./skillCards";
+} from './styles';
+import { Card, Grid, Text } from '@nextui-org/react';
+import { skillCards } from './skillCards';
+import PageContainer from '@/components/Layout/Container';
 
 const Skills = () => {
   return (
-    <>
+    <PageContainer cols='1'>
       <Text css={HeadingStyles} h3>
         Skills
       </Text>
@@ -17,7 +18,7 @@ const Skills = () => {
       <Grid.Container gap={2}>
         {Object.entries(skillCards).map((key) => {
           return (
-            <Grid xs={12} sm={4}>
+            <Grid xs={12} sm={4} key={key[0]}>
               <Card isHoverable>
                 <Card.Body>
                   <Text h4 css={CardHeadingStyles}>
@@ -26,7 +27,7 @@ const Skills = () => {
                   {key[1].icons.map((icon, idx) => {
                     const text = key[1].texts[idx];
                     return (
-                      <Text as="div" css={TextWrapper}>
+                      <Text as='div' css={TextWrapper} key={text}>
                         <>
                           {icon}
                           <Text css={CardBodyStyles}>{text}</Text>
@@ -40,7 +41,7 @@ const Skills = () => {
           );
         })}
       </Grid.Container>
-    </>
+    </PageContainer>
   );
 };
 
