@@ -1,6 +1,10 @@
 export const ArticleStyles = {
   width: '100%',
   display: 'grid',
+  justifyContent: 'center',
+  '@xs': {
+    justifyContent: 'unset',
+  },
 };
 
 export const GreetingStyles = {
@@ -22,7 +26,9 @@ export const GreetingStyles = {
 export const HeadingStyles = {
   letterSpacing: '1px',
   fontWeight: 800,
-  fontSize: '1.5rem',
+  fontSize: '1.8rem',
+  lineHeight: '2.5rem',
+
   '@sm': {
     fontSize: '2.2rem',
     lineHeight: '3rem',

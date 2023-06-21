@@ -14,11 +14,12 @@ import {
 import PageContainer from '@/components/Layout/Container';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { STRING_TYPES } from '@/components/strings';
+import SocialMediaIcons from '@/components/Common/SocialMediaIcons/SocialMediaIcons';
 
 const Hero = () => {
-  const isTablet = useMediaQuery(responsive.tablet);
-  const renderFromTabletScreen = (code) => {
-    return isTablet ? code : null;
+  const isMobile = useMediaQuery(responsive.mobileL);
+  const renderFromMobileScreen = (code) => {
+    return isMobile ? code : null;
   };
   return (
     <PageContainer>
@@ -28,7 +29,7 @@ const Hero = () => {
           {STRING_TYPES.NAME}
         </Text>
         <Text css={TypeItStyles}>
-          {renderFromTabletScreen(
+          {renderFromMobileScreen(
             <TypeIt
               getBeforeInit={(instance) => {
                 instance
@@ -59,18 +60,21 @@ const Hero = () => {
             />
           )}
         </Text>
+        <SocialMediaIcons />
       </Text>
 
-      <Text as='div' css={ImageContainerStyles}>
-        <Image
-          src={HeroPic}
-          priority
-          alt='hero-image'
-          style={HeroPicStyles}
-          placeholder='blur'
-          sizes={`(min-width: ${responsive.laptop}) 40vw, 100vw`}
-        />
-      </Text>
+      {renderFromMobileScreen(
+        <Text as='div' css={ImageContainerStyles}>
+          <Image
+            src={HeroPic}
+            priority
+            alt='hero-image'
+            style={HeroPicStyles}
+            placeholder='blur'
+            sizes={`(min-width: ${responsive.laptop}) 40vw, 100vw`}
+          />
+        </Text>
+      )}
     </PageContainer>
   );
 };

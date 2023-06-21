@@ -41,6 +41,8 @@ export const CardTitleStyles = {
 export const ImageContainerStyles = {
   position: 'relative',
   width: '100%',
+  transition: 'transform 0.4s ease-in-out',
+  '&:hover': { transform: 'scale3d(1.05, 1.05, 1)' },
 };
 
 export const ImageStyles = {

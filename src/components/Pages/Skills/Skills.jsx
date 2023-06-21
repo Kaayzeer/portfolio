@@ -7,12 +7,13 @@ import {
 import { Card, Grid, Text } from '@nextui-org/react';
 import { skillCards } from './skillCards';
 import PageContainer from '@/components/Layout/Container';
+import { STRING_TYPES } from '@/components/strings';
 
 const Skills = () => {
   return (
     <PageContainer cols='1'>
       <Text css={HeadingStyles} h3>
-        Skills
+        {STRING_TYPES.SKILLS_TITLE}
       </Text>
 
       <Grid.Container gap={2}>
