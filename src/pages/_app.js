@@ -4,14 +4,13 @@ import { createTheme, NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 // 2. Call `createTheme` and pass your custom values
-const lightTheme = createTheme({
+const theme = createTheme({
   type: "light",
-  theme: {},
-});
-
-const darkTheme = createTheme({
-  type: "dark",
-  theme: {},
+  theme: {
+    colors: {
+      myPrimary: "#D7CDDB",
+    },
+  },
 });
 
 // 3. Wrap NextUIProvider with NextThemesProvider
@@ -19,18 +18,9 @@ const darkTheme = createTheme({
 
 function MyApp({ Component, pageProps }) {
   return (
-    <NextThemesProvider
-      defaultTheme="system"
-      attribute="class"
-      value={{
-        light: lightTheme.className,
-        dark: darkTheme.className,
-      }}
-    >
-      <NextUIProvider>
-        <Component {...pageProps} />
-      </NextUIProvider>
-    </NextThemesProvider>
+    <NextUIProvider theme={theme}>
+      <Component {...pageProps} />
+    </NextUIProvider>
   );
 }
 

@@ -1,8 +1,8 @@
 export const IconsContainer = {
-  padding: '2rem 0rem',
+  /*  padding: "2rem 0rem", */
 };
 
 export const IconsWrapper = {
-  display: 'flex',
-  gap: '.25rem',
+  display: "flex",
+  gap: "1rem",
 };
