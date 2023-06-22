@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "@nextui-org/react";
 import { Logo } from "./Logo.jsx";
+import { useTheme } from "@nextui-org/react";
 
 const navItems = [
   { section: "Home", id: "#home", isActive: true },
@@ -9,6 +10,8 @@ const navItems = [
 ];
 
 const NavbarComp = () => {
+  const { theme } = useTheme();
+
   return (
     <Navbar isBordered variant="static" maxWidth="xl">
       <Navbar.Brand>

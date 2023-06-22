@@ -8,7 +8,8 @@ const theme = createTheme({
   type: "light",
   theme: {
     colors: {
-      myPrimary: "#D7CDDB",
+      myPrimary: "#C8D5DB",
+      mySecondary: "#D7CDDB",
     },
   },
 });

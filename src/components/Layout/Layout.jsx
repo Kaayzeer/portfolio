@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { Text } from "@nextui-org/react";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +20,13 @@ const Layout = ({ children }) => {
         />
       </Head>
       <Navbar />
-      <main className={`${inter.className}`}>{children}</main>
+      <Text
+        as="main"
+        css={{ background: "$myPrimary" }}
+        className={`${inter.className}`}
+      >
+        {children}
+      </Text>
       <Footer />
     </>
   );

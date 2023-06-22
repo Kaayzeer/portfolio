@@ -26,3 +26,15 @@ a {
     color-scheme: dark;
   }
 }
+
+.gmail:hover {
+  fill: #da4567;
+}
+
+.github:hover {
+  fill: #2d5c12;
+}
+
+.linkedin:hover {
+  fill: #748ddd;
+}
