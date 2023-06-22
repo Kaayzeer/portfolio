@@ -23,7 +23,7 @@ const SocialMediaIcons = () => {
     <Text as='div' css={IconsContainer}>
       <Text as='div' css={IconsWrapper}>
         {socialLinks.map((link) => (
-          <Avatars>{link.title}</Avatars>
+          <Avatars key={link.alt}>{link.title}</Avatars>
         ))}
       </Text>
     </Text>

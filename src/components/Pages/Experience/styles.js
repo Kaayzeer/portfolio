@@ -1,4 +1,4 @@
-export const HeadingStyles = {
+export const Heading = {
   letterSpacing: '1px',
   fontWeight: 800,
   fontSize: '1.8rem',
@@ -17,7 +17,7 @@ export const HeadingStyles = {
   },
 };
 
-export const CardTitleStyles = {
+export const CardTitle = {
   letterSpacing: '1px',
   fontWeight: 600,
   fontSize: '1.5rem',
@@ -38,20 +38,20 @@ export const CardTitleStyles = {
   },
 };
 
-export const ImageContainerStyles = {
+export const ImageContainer = {
   position: 'relative',
   width: '100%',
   transition: 'transform 0.4s ease-in-out',
   '&:hover': { transform: 'scale3d(1.05, 1.05, 1)' },
 };
 
-export const ImageStyles = {
+export const Img = {
   width: '100%',
   height: 'auto',
   borderRadius: '.875rem',
 };
 
-export const ArticleStylesEven = {
+export const ArticleEven = {
   display: 'grid',
   gap: '.5rem',
   width: '100%',
@@ -66,7 +66,7 @@ export const ArticleStylesEven = {
   },
 };
 
-export const ArticleStylesOdd = {
+export const ArticleOdd = {
   display: 'grid',
   gap: '.5rem',
   width: '100%',
@@ -80,7 +80,7 @@ export const ArticleStylesOdd = {
   },
 };
 
-export const HeadingWrapperStyles = {
+export const HeadingWrapper = {
   display: 'grid',
   placeItems: 'center',
   maxWidth: '40rem',
@@ -88,6 +88,6 @@ export const HeadingWrapperStyles = {
   width: '100%',
 };
 
-export const ButtonStyles = {
+export const Button = {
   width: '5rem',
 };

@@ -2,19 +2,12 @@ import { Text } from '@nextui-org/react';
 import Image from 'next/image';
 import TypeIt from 'typeit-react';
 import HeroPic from '../../../../public/images/heroPic.png';
-import { responsive } from '@/styles/styles';
-import {
-  GreetingStyles,
-  HeadingStyles,
-  TypeItStyles,
-  HeroPicStyles,
-  ArticleStyles,
-  ImageContainerStyles,
-} from './styles';
 import PageContainer from '@/components/Layout/Container';
-import useMediaQuery from '@/hooks/useMediaQuery';
 import { STRING_TYPES } from '@/components/strings';
 import SocialMediaIcons from '@/components/Common/SocialMediaIcons/SocialMediaIcons';
+import { responsive } from '@/styles/styles';
+import * as styled from './styles';
+import useMediaQuery from '@/hooks/useMediaQuery';
 
 const Hero = () => {
   const isMobile = useMediaQuery(responsive.mobileL);
@@ -23,13 +16,13 @@ const Hero = () => {
   };
   return (
     <PageContainer>
-      <Text as='div' css={ArticleStyles}>
-        <Text css={GreetingStyles}>{STRING_TYPES.GREETING}</Text>
-        <Text h1 css={HeadingStyles}>
+      <Text as='article' css={styled.Article}>
+        <Text css={styled.Greeting}>{STRING_TYPES.GREETING}</Text>
+        <Text h1 css={styled.Heading}>
           {STRING_TYPES.NAME}
         </Text>
-        <Text css={TypeItStyles}>
-          {renderFromMobileScreen(
+        {renderFromMobileScreen(
+          <Text css={styled.TypeIt}>
             <TypeIt
               getBeforeInit={(instance) => {
                 instance
@@ -58,18 +51,18 @@ const Hero = () => {
                 speed: 220,
               }}
             />
-          )}
-        </Text>
+          </Text>
+        )}
         <SocialMediaIcons />
       </Text>
 
       {renderFromMobileScreen(
-        <Text as='div' css={ImageContainerStyles}>
+        <Text as='picture' css={styled.ImageContainer}>
           <Image
             src={HeroPic}
             priority
             alt='hero-image'
-            style={HeroPicStyles}
+            style={styled.HeroPic}
             placeholder='blur'
             sizes={`(min-width: ${responsive.laptop}) 40vw, 100vw`}
           />

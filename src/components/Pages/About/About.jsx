@@ -6,38 +6,31 @@ import PageContainer, {
   PageNoPaddingContainer,
 } from '@/components/Layout/Container';
 import { responsive } from '@/styles/styles';
-import {
-  HeadingWrapperStyles,
-  HeadingStyles,
-  ArticleStyles,
-  ImageContainerStyles,
-  ImageStyles,
-  SubTitleStyles,
-} from './styles';
+import * as styled from './styles';
 import { STRING_TYPES } from '@/components/strings';
 
 const About = () => {
   return (
     <>
       <PageNoPaddingContainer cols='1'>
-        <Text as='div' css={HeadingWrapperStyles}>
-          <Text h3 css={HeadingStyles}>
+        <Text as='article' css={styled.HeadingWrapper}>
+          <Text h3 css={styled.Heading}>
             {STRING_TYPES.ABOUT_TITLE}
           </Text>
         </Text>
       </PageNoPaddingContainer>
       <PageContainer>
-        <Text as='div' css={ImageContainerStyles}>
+        <Text as='picture' css={styled.ImageContainer}>
           <Image
             src={WorkingSpace}
             alt='working-space'
-            style={ImageStyles}
+            style={styled.Img}
             placeholder='blur'
             sizes={`(min-width: ${responsive.laptop}) 40vw, 100vw`}
           />
         </Text>
-        <Text as='div' css={ArticleStyles}>
-          <Text h3 css={SubTitleStyles}>
+        <Text as='article' css={styled.Article}>
+          <Text h4 css={styled.SubTitle}>
             {STRING_TYPES.ABOUT_SUBTITLE}
           </Text>
           <Text>{STRING_TYPES.ABOUT_BODY}</Text>

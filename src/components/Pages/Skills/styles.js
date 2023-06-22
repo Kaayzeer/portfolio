@@ -8,7 +8,7 @@ export const TextWrapper = {
   },
 };
 
-export const HeadingStyles = {
+export const Heading = {
   letterSpacing: '1px',
   fontWeight: 800,
   fontSize: '1.8rem',
@@ -25,7 +25,7 @@ export const HeadingStyles = {
   },
 };
 
-export const CardHeadingStyles = {
+export const CardHeading = {
   textAlign: 'center',
   letterSpacing: '1px',
   fontWeight: 500,
@@ -41,7 +41,7 @@ export const CardHeadingStyles = {
   },
 };
 
-export const CardBodyStyles = {
+export const CardBody = {
   textAlign: 'center',
   letterSpacing: '1px',
   fontWeight: 300,

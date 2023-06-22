@@ -3,16 +3,7 @@ import Image from 'next/image';
 import { Text, Button } from '@nextui-org/react';
 import { experiences } from './experiences';
 import { responsive } from '@/styles/styles';
-import {
-  HeadingStyles,
-  ImageContainerStyles,
-  ImageStyles,
-  ArticleStylesEven,
-  ArticleStylesOdd,
-  HeadingWrapperStyles,
-  CardTitleStyles,
-  ButtonStyles,
-} from './styles';
+import * as styled from './styles';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import PageContainer, {
   PageNoPaddingContainer,
@@ -24,14 +15,16 @@ const isTabletReverseRow = (experience, index, isTablet) => {
     <Fragment key={experience.title}>
       {isTablet && index % 2 !== 0 ? (
         <>
-          <Text as='div' css={ArticleStylesOdd}>
-            <Text h4 css={CardTitleStyles}>
+          <Text as='article' css={styled.ArticleOdd}>
+            <Text h4 css={styled.CardTitle}>
               {experience.title}
             </Text>
             <Text>{experience.body}</Text>
             <Button
+              as='a'
+              target='_blank'
               color='warning'
-              css={ButtonStyles}
+              css={styled.Button}
               bordered
               borderWeight='extrabold'
               href={experience.linkHref}
@@ -39,11 +32,11 @@ const isTabletReverseRow = (experience, index, isTablet) => {
               {experience.buttonText}
             </Button>
           </Text>
-          <Text as='div' css={ImageContainerStyles}>
+          <Text as='picture' css={styled.ImageContainer}>
             <Image
               src={experience.image}
               alt={experience.imageAlt}
-              style={ImageStyles}
+              style={styled.Img}
               placeholder='blur'
               sizes={`(min-width: ${responsive.laptop}) 40vw, 100vw`}
             />
@@ -51,26 +44,27 @@ const isTabletReverseRow = (experience, index, isTablet) => {
         </>
       ) : (
         <>
-          <Text as='div' css={ImageContainerStyles}>
+          <Text as='picture' css={styled.ImageContainer}>
             <Image
               src={experience.image}
               alt={experience.imageAlt}
-              style={ImageStyles}
+              style={styled.Img}
               placeholder='blur'
               sizes={`(min-width: ${responsive.laptop}) 40vw, 100vw`}
             />
           </Text>
-          <Text as='div' css={ArticleStylesEven}>
-            <Text h4 css={CardTitleStyles}>
+          <Text as='article' css={styled.ArticleEven}>
+            <Text h4 css={styled.CardTitle}>
               {experience.title}
             </Text>
             <Text>{experience.body}</Text>
             <Button
               as='a'
+              target='_blank'
               color='warning'
               bordered
               borderWeight='extrabold'
-              css={ButtonStyles}
+              css={styled.Button}
               href={experience.linkHref}
             >
               {experience.buttonText}
@@ -87,8 +81,8 @@ const Experience = () => {
   return (
     <>
       <PageNoPaddingContainer cols='1'>
-        <Text as='div' css={HeadingWrapperStyles}>
-          <Text h3 css={HeadingStyles}>
+        <Text as='article' css={styled.HeadingWrapper}>
+          <Text h2 css={styled.Heading}>
             {STRING_TYPES.EXPERIENCE_TITLE}
           </Text>
         </Text>

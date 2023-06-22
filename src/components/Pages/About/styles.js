@@ -1,4 +1,4 @@
-export const ArticleStyles = {
+export const Article = {
   display: 'grid',
   width: '100%',
   padding: '0rem 0rem 2rem .2rem',
@@ -12,7 +12,7 @@ export const ArticleStyles = {
   },
 };
 
-export const HeadingWrapperStyles = {
+export const HeadingWrapper = {
   display: 'grid',
   placeItems: 'center',
   maxWidth: '40rem',
@@ -20,7 +20,7 @@ export const HeadingWrapperStyles = {
   width: '100%',
 };
 
-export const HeadingStyles = {
+export const Heading = {
   letterSpacing: '1px',
   fontWeight: 800,
   fontSize: '1.8rem',
@@ -39,18 +39,18 @@ export const HeadingStyles = {
   },
 };
 
-export const ImageContainerStyles = {
+export const ImageContainer = {
   position: 'relative',
   width: '100%',
 };
 
-export const ImageStyles = {
+export const Img = {
   width: '100%',
   height: 'auto',
   borderRadius: '.875rem',
 };
 
-export const SubTitleStyles = {
+export const SubTitle = {
   letterSpacing: '1px',
   fontWeight: 600,
   fontSize: '1.5rem',

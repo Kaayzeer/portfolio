@@ -1,18 +1,13 @@
-import {
-  TextWrapper,
-  HeadingStyles,
-  CardHeadingStyles,
-  CardBodyStyles,
-} from './styles';
 import { Card, Grid, Text } from '@nextui-org/react';
 import { skillCards } from './skillCards';
 import PageContainer from '@/components/Layout/Container';
 import { STRING_TYPES } from '@/components/strings';
+import * as styled from './styles';
 
 const Skills = () => {
   return (
     <PageContainer cols='1'>
-      <Text css={HeadingStyles} h3>
+      <Text css={styled.Heading} h2>
         {STRING_TYPES.SKILLS_TITLE}
       </Text>
 
@@ -22,16 +17,16 @@ const Skills = () => {
             <Grid xs={12} sm={4} key={key[0]}>
               <Card isHoverable>
                 <Card.Body>
-                  <Text h4 css={CardHeadingStyles}>
+                  <Text h3 css={styled.CardHeading}>
                     {key[0]}
                   </Text>
                   {key[1].icons.map((icon, idx) => {
                     const text = key[1].texts[idx];
                     return (
-                      <Text as='div' css={TextWrapper} key={text}>
+                      <Text as='article' css={styled.TextWrapper} key={text}>
                         <>
                           {icon}
-                          <Text css={CardBodyStyles}>{text}</Text>
+                          <Text css={styled.CardBody}>{text}</Text>
                         </>
                       </Text>
                     );

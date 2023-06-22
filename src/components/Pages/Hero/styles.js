@@ -1,4 +1,4 @@
-export const ArticleStyles = {
+export const Article = {
   width: '100%',
   display: 'grid',
   justifyContent: 'center',
@@ -7,7 +7,7 @@ export const ArticleStyles = {
   },
 };
 
-export const GreetingStyles = {
+export const Greeting = {
   width: 'fit-content',
   padding: '.25rem .5rem',
   borderRadius: '.5rem .5rem .5rem 0rem',
@@ -23,7 +23,7 @@ export const GreetingStyles = {
     fontSize: '1.3rem',
   },
 };
-export const HeadingStyles = {
+export const Heading = {
   letterSpacing: '1px',
   fontWeight: 800,
   fontSize: '1.8rem',
@@ -43,7 +43,7 @@ export const HeadingStyles = {
   },
 };
 
-export const TypeItStyles = {
+export const TypeIt = {
   width: 'fit-content',
   letterSpacing: '1px',
   fontSize: '1.125rem',
@@ -57,12 +57,12 @@ export const TypeItStyles = {
   },
 };
 
-export const HeroPicStyles = {
+export const HeroPic = {
   width: '100%',
   height: 'auto',
 };
 
-export const ImageContainerStyles = {
+export const ImageContainer = {
   position: 'relative',
   width: '100%',
   '@xs': {
