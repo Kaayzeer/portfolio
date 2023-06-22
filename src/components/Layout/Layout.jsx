@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-import Navbar from "./Navbar/Navbar.jsx";
+import Navbar from "./Navbar/NavbarComp.jsx";
 import Footer from "./Footer/Footer.jsx";
 
 const Layout = ({ children }) => {
