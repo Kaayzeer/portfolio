@@ -8,6 +8,7 @@ export const Article = {
 };
 
 export const Greeting = {
+  color: "white",
   width: "fit-content",
   padding: ".25rem .5rem",
   borderRadius: ".5rem .5rem .5rem 0rem",

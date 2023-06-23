@@ -1,21 +1,17 @@
 import "@/styles/globals.css";
-// 1. Import `createTheme`
-import { createTheme, NextUIProvider } from "@nextui-org/react";
-import { ThemeProvider as NextThemesProvider } from "next-themes";
 
-// 2. Call `createTheme` and pass your custom values
+import { createTheme, NextUIProvider } from "@nextui-org/react";
+
 const theme = createTheme({
   type: "light",
   theme: {
     colors: {
       myPrimary: "#C8D5DB",
       mySecondary: "#D7CDDB",
+      myTertiary: "#b05b33",
     },
   },
 });
-
-// 3. Wrap NextUIProvider with NextThemesProvider
-// _app.jsx // _app.tsx
 
 function MyApp({ Component, pageProps }) {
   return (

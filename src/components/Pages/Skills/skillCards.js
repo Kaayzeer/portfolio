@@ -24,7 +24,7 @@ export const skillCards = {
         <I.NodeIcon />
       </Avatars>,
     ],
-    texts: ["Html5", "css3", "JavaScript", "Next", "Typescript", "Node.js"],
+    texts: ["HTML5", "CSS3", "JavaScript", "Next", "Typescript", "Node.js"],
   },
   Tools: {
     icons: [
@@ -77,7 +77,7 @@ export const skillCards = {
       "Tailwind.css",
       "SASS",
       "styled-components",
-      "andDesign",
+      "AntDesign",
     ],
   },
 };
