@@ -2,9 +2,12 @@ export const TextWrapper = {
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
-  padding: ".5rem 2rem",
+  padding: ".5rem ",
+  "@xs": {
+    padding: ".5rem 2rem",
+  },
   "@sm": {
-    padding: ".5rem",
+    padding: ".5rem 0rem",
   },
 };
 
@@ -28,6 +31,7 @@ export const Heading = {
 export const CardHeading = {
   width: "fit-content",
   margin: "0 auto",
+  marginBottom: ".5rem",
   letterSpacing: "1px",
   fontSize: "1.125rem",
   fontWeight: 500,

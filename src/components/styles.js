@@ -9,7 +9,7 @@ export const ContainerMaxWidthStyles = (cols = 2) => {
     placeItems: "center",
     gap: "rem",
     /*     bg: 'green', */
-    padding: "3rem 1.5rem",
+    padding: "3rem 0rem",
     "@xs": {
       gridTemplateColumns: `repeat(${cols},1fr)`,
       gap: "2rem",
@@ -29,18 +29,10 @@ export const ContainerNoPaddingMaxWidthStyles = (cols = 2) => {
     display: "grid",
     placeItems: "center",
     gap: "rem",
-    /*     bg: 'green', */
 
     "@xs": {
       gridTemplateColumns: `repeat(${cols},1fr)`,
       gap: "2rem",
-
-      /*     bg: 'purple',
-      bg: 'red', */
     },
-    "@lg": {
-      /*    bg: 'red', */
-    },
-    "@xl": {},
   };
 };
