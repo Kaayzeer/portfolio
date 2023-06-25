@@ -81,9 +81,9 @@ const Experience = () => {
   const isTabletL = useMediaQuery(responsive.tabletL);
   return (
     <>
-      <PageNoPaddingContainer cols="1" id="experience">
+      <PageNoPaddingContainer cols="1">
         <Text as="article" css={styled.HeadingWrapper}>
-          <Text h2 css={styled.Heading}>
+          <Text h2 css={styled.Heading} id="experience">
             {STRING_TYPES.EXPERIENCE_TITLE}
           </Text>
         </Text>

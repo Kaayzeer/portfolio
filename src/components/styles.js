@@ -7,6 +7,7 @@ export const ContainerMaxWidthStyles = (cols = 2) => {
     display: "grid",
     placeItems: "center",
     gap: "1rem",
+    height: "100%",
     padding: "3rem 0rem",
     "@xs": {
       gridTemplateColumns: `repeat(${cols},1fr)`,
@@ -24,7 +25,7 @@ export const ContainerNoPaddingMaxWidthStyles = (cols = 2) => {
     display: "grid",
     placeItems: "center",
     gap: "1rem",
-
+    height: "100%",
     "@xs": {
       gridTemplateColumns: `repeat(${cols},1fr)`,
       gap: "2rem",
@@ -36,6 +37,7 @@ export const ExperienceContainerMaxWidthStyles = {
   display: "grid",
   placeItems: "center",
   gap: "1rem",
+  height: "100%",
   padding: "3rem 0rem",
   "@xs": {
     padding: "5rem 7rem",

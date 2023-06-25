@@ -15,7 +15,15 @@ const NavbarComp = () => {
   const { asPath } = useRouter();
   const { theme } = useTheme();
   return (
-    <Navbar isBordered variant="static" maxWidth="xl">
+    <Navbar
+      isBordered
+      maxWidth="xl"
+      css={{
+        $$navbarBackgroundColor: "transparent",
+        $$navbarBlurBackgroundColor: "transparent",
+        position: "fixed",
+      }}
+    >
       <Navbar.Brand>
         <Logo color="#D7CDDB" />
       </Navbar.Brand>

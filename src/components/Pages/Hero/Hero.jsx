@@ -16,7 +16,7 @@ const Hero = () => {
   };
   return (
     <PageContainer id="home">
-      <Text as="article" css={styled.Article}>
+      <Text as="article" css={styled.Article} id="home">
         <Text css={styled.Greeting}>{STRING_TYPES.GREETING}</Text>
         <Text h1 css={styled.Heading}>
           {STRING_TYPES.NAME}

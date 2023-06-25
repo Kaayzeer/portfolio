@@ -7,9 +7,9 @@ import {
   ExperienceContainerMaxWidthStyles,
 } from "../styles";
 
-export const PageNoPaddingContainer = ({ children, cols }) => {
+export const PageNoPaddingContainer = ({ children, cols, id }) => {
   return (
-    <Container fluid css={ContainerFullWidthStyles}>
+    <Container id={id} fluid css={ContainerFullWidthStyles}>
       <Container md css={ContainerNoPaddingMaxWidthStyles(cols)}>
         {children}
       </Container>
@@ -17,9 +17,9 @@ export const PageNoPaddingContainer = ({ children, cols }) => {
   );
 };
 
-export const ExperienceContainer = ({ children }) => {
+export const ExperienceContainer = ({ children, id }) => {
   return (
-    <Container fluid css={ContainerFullWidthStyles}>
+    <Container id={id} fluid css={ContainerFullWidthStyles}>
       <Container md css={ExperienceContainerMaxWidthStyles}>
         {children}
       </Container>
@@ -27,9 +27,9 @@ export const ExperienceContainer = ({ children }) => {
   );
 };
 
-const PageContainer = ({ children, cols }) => {
+const PageContainer = ({ children, cols, id }) => {
   return (
-    <Container fluid css={ContainerFullWidthStyles}>
+    <Container id={id} fluid css={ContainerFullWidthStyles}>
       <Container md css={ContainerMaxWidthStyles(cols)}>
         {children}
       </Container>
