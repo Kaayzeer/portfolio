@@ -11,6 +11,7 @@ export const StyledAvatar = styled(Avatar, {
     size: {
       mySize: {
         height: "$15",
+        width: "$15",
         borderRadius: "$3xl",
       },
     },

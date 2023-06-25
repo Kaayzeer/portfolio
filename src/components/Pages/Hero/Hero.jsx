@@ -1,13 +1,13 @@
-import { Text } from '@nextui-org/react';
-import Image from 'next/image';
-import TypeIt from 'typeit-react';
-import HeroPic from '../../../../public/images/heroPic.png';
-import PageContainer from '@/components/Layout/Container';
-import { STRING_TYPES } from '@/components/strings';
-import SocialMediaIcons from '@/components/Common/SocialMediaIcons/SocialMediaIcons';
-import { responsive } from '@/styles/styles';
-import * as styled from './styles';
-import useMediaQuery from '@/hooks/useMediaQuery';
+import { Text } from "@nextui-org/react";
+import Image from "next/image";
+import TypeIt from "typeit-react";
+import HeroPic from "../../../../public/images/heroPic.png";
+import PageContainer from "@/components/Layout/Container";
+import { STRING_TYPES } from "@/components/strings";
+import SocialMediaIcons from "@/components/Common/SocialMediaIcons/SocialMediaIcons";
+import { responsive } from "@/styles/styles";
+import * as styled from "./styles";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 const Hero = () => {
   const isMobile = useMediaQuery(responsive.mobileL);
@@ -15,8 +15,8 @@ const Hero = () => {
     return isMobile ? code : null;
   };
   return (
-    <PageContainer>
-      <Text as='article' css={styled.Article}>
+    <PageContainer id="home">
+      <Text as="article" css={styled.Article}>
         <Text css={styled.Greeting}>{STRING_TYPES.GREETING}</Text>
         <Text h1 css={styled.Heading}>
           {STRING_TYPES.NAME}
@@ -46,7 +46,7 @@ const Hero = () => {
                 loop: true,
 
                 lifeLike: true,
-                cursorChar: '_',
+                cursorChar: "_",
                 smartBackspace: true,
                 speed: 220,
               }}
@@ -57,13 +57,13 @@ const Hero = () => {
       </Text>
 
       {renderFromMobileScreen(
-        <Text as='picture' css={styled.ImageContainer}>
+        <Text as="picture" css={styled.ImageContainer}>
           <Image
             src={HeroPic}
             priority
-            alt='hero-image'
+            alt="hero-image"
             style={styled.HeroPic}
-            placeholder='blur'
+            placeholder="blur"
             sizes={`(min-width: ${responsive.laptop}) 40vw, 100vw`}
           />
         </Text>

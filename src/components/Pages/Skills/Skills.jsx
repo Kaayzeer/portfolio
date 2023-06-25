@@ -6,7 +6,7 @@ import * as styled from "./styles";
 
 const Skills = () => {
   return (
-    <PageContainer cols="1">
+    <PageContainer cols="1" id="skills">
       <Text css={styled.Heading} h2>
         {STRING_TYPES.SKILLS_TITLE}
       </Text>

@@ -12,7 +12,7 @@ import { STRING_TYPES } from "@/components/strings";
 const About = () => {
   return (
     <>
-      <PageNoPaddingContainer cols="1">
+      <PageNoPaddingContainer cols="1" id="about">
         <Text as="article" css={styled.HeadingWrapper}>
           <Text h3 css={styled.Heading}>
             {STRING_TYPES.ABOUT_TITLE}

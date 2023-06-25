@@ -23,7 +23,9 @@ const SocialMediaIcons = () => {
     <Text as="div" css={styled.IconsContainer}>
       <Text as="div" css={styled.IconsWrapper}>
         {socialLinks.map((link) => (
-          <Avatars cursor="pointer">{link.title}</Avatars>
+          <Avatars key={link.alt} cursor="pointer">
+            {link.title}
+          </Avatars>
         ))}
       </Text>
     </Text>
