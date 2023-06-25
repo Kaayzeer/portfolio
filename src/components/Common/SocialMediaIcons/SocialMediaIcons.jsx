@@ -1,6 +1,6 @@
 import Avatars from "../Avatars/Avatars";
 import { Text } from "@nextui-org/react";
-import * as I from "@/components/Common/TechIcons";
+import * as I from "@/components/Common/Icons";
 import * as styled from "./styled";
 
 const socialLinks = [

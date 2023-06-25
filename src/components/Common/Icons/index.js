@@ -22,6 +22,8 @@ import { TypescriptIcon } from "./TypeScriptIcon";
 import { VercelIcon } from "./VercelIcon";
 import { GmailIcon } from "./GmailIcon";
 import { LinkedInIcon } from "./LinkedInIcon";
+import { WorkIcon } from "./WorkIcon";
+import { InfoIcon } from "./InfoIcon";
 
 export {
   AntIcon,
@@ -48,4 +50,6 @@ export {
   VercelIcon,
   GmailIcon,
   LinkedInIcon,
+  WorkIcon,
+  InfoIcon,
 };

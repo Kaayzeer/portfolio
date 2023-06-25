@@ -1,15 +1,26 @@
-import React from 'react';
-import { Container } from '@nextui-org/react';
+import React from "react";
+import { Container } from "@nextui-org/react";
 import {
   ContainerFullWidthStyles,
   ContainerMaxWidthStyles,
   ContainerNoPaddingMaxWidthStyles,
-} from '../styles';
+  ExperienceContainerMaxWidthStyles,
+} from "../styles";
 
 export const PageNoPaddingContainer = ({ children, cols }) => {
   return (
     <Container fluid css={ContainerFullWidthStyles}>
       <Container md css={ContainerNoPaddingMaxWidthStyles(cols)}>
+        {children}
+      </Container>
+    </Container>
+  );
+};
+
+export const ExperienceContainer = ({ children }) => {
+  return (
+    <Container fluid css={ContainerFullWidthStyles}>
+      <Container md css={ExperienceContainerMaxWidthStyles}>
         {children}
       </Container>
     </Container>

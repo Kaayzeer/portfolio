@@ -1,6 +1,5 @@
 export const ContainerFullWidthStyles = {
   minWidth: "100%",
-  /*   bg: 'blue', */
 };
 
 export const ContainerMaxWidthStyles = (cols = 2) => {
@@ -8,14 +7,10 @@ export const ContainerMaxWidthStyles = (cols = 2) => {
     display: "grid",
     placeItems: "center",
     gap: "rem",
-    /*     bg: 'green', */
     padding: "3rem 0rem",
     "@xs": {
       gridTemplateColumns: `repeat(${cols},1fr)`,
       gap: "2rem",
-      /* 
-      bg: 'purple',
-      bg: 'red', */
       padding: "5rem 7rem",
     },
     "@lg": {
@@ -35,4 +30,21 @@ export const ContainerNoPaddingMaxWidthStyles = (cols = 2) => {
       gap: "2rem",
     },
   };
+};
+
+export const ExperienceContainerMaxWidthStyles = {
+  display: "grid",
+  placeItems: "center",
+  gap: "rem",
+  padding: "3rem 0rem",
+  "@xs": {
+    gap: "2rem",
+    padding: "5rem 7rem",
+  },
+  "@sm": {
+    gridTemplateColumns: `repeat(2,1fr)`,
+  },
+  "@lg": {
+    padding: "6rem 7rem",
+  },
 };

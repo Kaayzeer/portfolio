@@ -1,35 +1,37 @@
 import React, { Fragment } from "react";
 import Image from "next/image";
-import { Text, Button } from "@nextui-org/react";
+import { Text } from "@nextui-org/react";
 import { experiences } from "./experiences";
 import { responsive } from "@/styles/styles";
 import * as styled from "./styles";
 import useMediaQuery from "@/hooks/useMediaQuery";
-import PageContainer, {
+import {
   PageNoPaddingContainer,
+  ExperienceContainer,
 } from "@/components/Layout/Container";
 import { STRING_TYPES } from "@/components/strings";
 
-const isTabletReverseRow = (experience, index, isTablet) => {
+const isTabletReverseRow = (experience, index, isTabletL) => {
   return (
     <Fragment key={experience.title}>
-      {isTablet && index % 2 !== 0 ? (
+      {isTabletL && index % 2 !== 0 ? (
         <>
           <Text as="article" css={styled.ArticleOdd}>
             <Text h4 css={styled.CardTitle}>
               {experience.title}
             </Text>
             <Text>{experience.body}</Text>
-            <Button
-              as="a"
-              bordered
-              target="_blank"
-              css={styled.Button}
-              borderWeight="extrabold"
-              href={experience.linkHref}
-            >
-              {experience.buttonText}
-            </Button>
+            <Text as="div" style={styled.ButtonWrapper}>
+              {experience.buttonIcon}
+              <Text
+                as="a"
+                href={experience.linkHref}
+                css={styled.Button}
+                target="_blank"
+              >
+                {experience.buttonText}
+              </Text>
+            </Text>
           </Text>
           <Text as="picture" css={styled.ImageContainer}>
             <Image
@@ -57,16 +59,17 @@ const isTabletReverseRow = (experience, index, isTablet) => {
               {experience.title}
             </Text>
             <Text>{experience.body}</Text>
-            <Button
-              as="a"
-              target="_blank"
-              bordered
-              borderWeight="extrabold"
-              css={styled.Button}
-              href={experience.linkHref}
-            >
-              {experience.buttonText}
-            </Button>
+            <Text as="div" style={styled.ButtonWrapper}>
+              {experience.buttonIcon}
+              <Text
+                as="a"
+                href={experience.linkHref}
+                css={styled.Button}
+                target="_blank"
+              >
+                {experience.buttonText}
+              </Text>
+            </Text>
           </Text>
         </>
       )}
@@ -75,7 +78,7 @@ const isTabletReverseRow = (experience, index, isTablet) => {
 };
 
 const Experience = () => {
-  const isTablet = useMediaQuery(responsive.tablet);
+  const isTabletL = useMediaQuery(responsive.tabletL);
   return (
     <>
       <PageNoPaddingContainer cols="1">
@@ -85,11 +88,11 @@ const Experience = () => {
           </Text>
         </Text>
       </PageNoPaddingContainer>
-      <PageContainer>
+      <ExperienceContainer>
         {experiences.map((experience, idx) =>
-          isTabletReverseRow(experience, idx, isTablet)
+          isTabletReverseRow(experience, idx, isTabletL)
         )}
-      </PageContainer>
+      </ExperienceContainer>
     </>
   );
 };

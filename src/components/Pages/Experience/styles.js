@@ -88,9 +88,15 @@ export const HeadingWrapper = {
   width: "100%",
 };
 
+export const ButtonWrapper = {
+  display: "flex",
+  alignItems: "center",
+  gap: ".5rem",
+  width: "8rem",
+};
+
 export const Button = {
-  width: "5rem",
-  borderColor: "$myTertiary",
-  color: "$myTertiary",
-  fontWeight: 800,
+  letterSpacing: ".5px",
+  fontWeight: 600,
+  lineHeight: "2rem",
 };

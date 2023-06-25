@@ -1,5 +1,5 @@
 import Avatars from "@/components/Common/Avatars/Avatars";
-import * as I from "@/components/Common/TechIcons";
+import * as I from "@/components/Common/Icons";
 
 export const skillCards = {
   Technologies: {
