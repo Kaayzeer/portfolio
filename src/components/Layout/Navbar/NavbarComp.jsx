@@ -1,29 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { Navbar } from "@nextui-org/react";
 import { Logo } from "./Logo.jsx";
 import { useTheme } from "@nextui-org/react";
 import { useRouter } from "next/router.js";
-
-const navItems = [
-  { section: "Home", href: "#home" },
-  { section: "About", href: "#about" },
-  { section: "Skills", href: "#skills" },
-  { section: "Experience", href: "#experience" },
-];
+import { navItems, removeHTags } from "./navConstants.js";
+import * as styles from "./styles.js";
 
 const NavbarComp = () => {
   const { asPath } = useRouter();
   const { theme } = useTheme();
+
   return (
-    <Navbar
-      isBordered
-      maxWidth="xl"
-      css={{
-        $$navbarBackgroundColor: "transparent",
-        $$navbarBlurBackgroundColor: "transparent",
-        position: "fixed",
-      }}
-    >
+    <Navbar isBordered maxWidth="xl" css={styles.Navbar}>
       <Navbar.Brand>
         <Logo color="#D7CDDB" />
       </Navbar.Brand>
@@ -35,11 +23,11 @@ const NavbarComp = () => {
       >
         {navItems.map((navItem) => (
           <Navbar.Link
-            underline
             underlineHeight="extrabold"
             isActive={navItem.href === asPath}
             key={navItem.section}
             href={navItem.href}
+            onClick={removeHTags}
           >
             {navItem.section}
           </Navbar.Link>

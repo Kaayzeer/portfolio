@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import { Text } from "@nextui-org/react";
-import { Inter } from "next/font/google";
+import { Ysabeau } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const ysabeau = Ysabeau({ subsets: ["latin"] });
 
 import Navbar from "./Navbar/NavbarComp.jsx";
 import Footer from "./Footer/Footer.jsx";
@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
       <Text
         as="main"
         css={{ background: "$myPrimary" }}
-        className={`${inter.className}`}
+        className={`${ysabeau.className}`}
       >
         {children}
       </Text>

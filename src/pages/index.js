@@ -8,8 +8,8 @@ const Landing = () => {
   return (
     <Layout>
       <Hero />
-      <About />
       <Skills />
+      <About />
       <Experience />
     </Layout>
   );

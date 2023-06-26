@@ -5,7 +5,11 @@
 }
 
 html {
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #c8d5db;
 }
 
 html,
