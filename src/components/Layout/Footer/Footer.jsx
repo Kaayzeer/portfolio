@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <FooterContainer cols="1" bgColor="$myTertiary">
       <Text as="footer" style={styled.Footer}>
-        <SocialMediaIcons />
+        <SocialMediaIcons gap="2.5rem" />
         <FooterNav />
         <Text as="article">
           <Text as="h4" css={styled.Body}>

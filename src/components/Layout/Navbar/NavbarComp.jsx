@@ -11,7 +11,7 @@ const NavbarComp = () => {
   const { theme } = useTheme();
 
   return (
-    <Navbar isBordered maxWidth="xl" css={styles.Navbar}>
+    <Navbar maxWidth="xl" css={styles.Navbar}>
       <Navbar.Brand>
         <Logo color="#D7CDDB" />
       </Navbar.Brand>

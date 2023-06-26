@@ -54,7 +54,7 @@ const Hero = () => {
             />
           </Text>
         )}
-        <SocialMediaIcons />
+        <SocialMediaIcons gap="1rem" />
       </Text>
 
       {renderFromLargeMobileScreen(

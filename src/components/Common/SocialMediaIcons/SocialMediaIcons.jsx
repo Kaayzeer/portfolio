@@ -2,29 +2,35 @@ import Avatars from "../Avatars/Avatars";
 import { Text } from "@nextui-org/react";
 import * as I from "@/components/Common/Icons";
 import * as styled from "./styled";
+import Link from "next/link";
 
 const socialLinks = [
   {
     title: <I.LinkedInIcon />,
     alt: "linkedIn-link",
+    href: "https://linkedin.com/in/nikolasr",
   },
   {
     title: <I.GithubIcon />,
     alt: "github-link",
+    href: "https://github.com/Kaayzeer",
   },
   {
     title: <I.GmailIcon />,
     alt: "gmail-link",
+    href: "mailto:nmrb60@gmail.com",
   },
 ];
 
-const SocialMediaIcons = () => {
+const SocialMediaIcons = ({ gap }) => {
   return (
     <Text as="div" css={styled.IconsContainer}>
-      <Text as="div" css={styled.IconsWrapper}>
+      <Text as="div" css={styled.IconsWrapper(gap)}>
         {socialLinks.map((link) => (
           <Avatars key={link.alt} cursor="pointer">
-            {link.title}
+            <Link target="_blank" href={link.href}>
+              {link.title}
+            </Link>
           </Avatars>
         ))}
       </Text>

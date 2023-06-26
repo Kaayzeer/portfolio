@@ -1,6 +1,7 @@
 export const Ul = {
   display: "flex",
   gap: "2rem",
+  height: "2.5rem",
 };
 
 export const Li = {

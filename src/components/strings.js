@@ -8,7 +8,7 @@ export const STRING_TYPES = {
   HERO_REACT: "Front end developer",
   HERO_SOFTWARE: "React Developer",
   HERO_WEB: "Web Developer",
-  SKILLS_TITLE: "Skills",
+  SKILLS_TITLE: "Tools and Technologies",
   EXPERIENCE_TITLE:
     "Code in Motion: Projects that Capture my Passionate Spirit",
   ABOUT_TITLE: "About me",

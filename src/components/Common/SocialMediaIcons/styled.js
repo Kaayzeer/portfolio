@@ -3,7 +3,6 @@ export const IconsContainer = {
   width: "fit-content",
 };
 
-export const IconsWrapper = {
-  display: "flex",
-  gap: "1rem",
+export const IconsWrapper = (gap) => {
+  return { display: "flex", gap: gap };
 };

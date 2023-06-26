@@ -1,8 +1,15 @@
 export const Article = {
   width: "100%",
-  display: "grid",
+  display: "flex",
+  flexDirection: "column",
+  gap: ".25rem",
+  alignItems: "center",
   justifyContent: "center",
+  padding: "5rem 0rem",
   "@xs": {
+    alignItems: "unset",
+    padding: 0,
+    gap: ".5rem",
     justifyContent: "unset",
   },
 };
@@ -26,19 +33,22 @@ export const Greeting = {
 export const Heading = {
   letterSpacing: "1px",
   fontWeight: 800,
-  fontSize: "1.8rem",
+  fontSize: "2.5rem",
   lineHeight: "2.5rem",
-
+  "@xs": {
+    fontSize: "1.5rem",
+    lineHeight: "3rem",
+  },
   "@sm": {
-    fontSize: "2.2rem",
+    fontSize: "2.7rem",
     lineHeight: "3rem",
   },
   "@md": {
-    fontSize: "3rem",
+    fontSize: "3.75rem",
     lineHeight: "3.75rem",
   },
   "@lg": {
-    fontSize: "3.75rem",
+    fontSize: "4rem",
     lineHeight: "4.5rem",
   },
 };
