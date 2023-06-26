@@ -15,6 +15,7 @@ export const Heading = {
   letterSpacing: "1px",
   fontWeight: 800,
   fontSize: "1.8rem",
+  textAlign: "center",
   "@sm": {
     fontSize: "2.2em",
     lineHeight: "2.5rem",

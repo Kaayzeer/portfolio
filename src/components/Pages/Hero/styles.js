@@ -19,7 +19,9 @@ export const Greeting = {
   padding: ".25rem .5rem",
   borderRadius: ".5rem .5rem .5rem 0rem",
   background: "$mySecondary",
+  color: "$myTertiary",
   fontSize: ".8rem",
+  letterSpacing: "1px",
   "@md": {
     fontSize: ".95rem",
   },
@@ -35,7 +37,9 @@ export const Heading = {
   fontWeight: 800,
   fontSize: "2.5rem",
   lineHeight: "2.5rem",
+  textAlign: "center",
   "@xs": {
+    textAlign: "left",
     fontSize: "1.5rem",
     lineHeight: "3rem",
   },

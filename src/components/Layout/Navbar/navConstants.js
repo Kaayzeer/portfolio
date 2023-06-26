@@ -2,7 +2,7 @@ export const navItems = [
   { section: "Home", href: "#home" },
   { section: "Skills", href: "#skills" },
   { section: "About", href: "#about" },
-  { section: "Experience", href: "#experience" },
+  { section: "Work", href: "#experience" },
 ];
 
 export const removeHTags = () =>

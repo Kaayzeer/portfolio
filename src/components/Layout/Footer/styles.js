@@ -2,6 +2,7 @@ export const Ul = {
   display: "flex",
   gap: "2rem",
   height: "2.5rem",
+  margin: 0,
 };
 
 export const Li = {
@@ -27,6 +28,9 @@ export const Footer = {
   display: "grid",
   placeItems: "center",
   gap: "1rem",
+  "@sm": {
+    gap: "2rem",
+  },
 };
 
 export const Body = {
