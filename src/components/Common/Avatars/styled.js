@@ -1,7 +1,7 @@
 import { Avatar, styled } from "@nextui-org/react";
 
 export const StyledAvatar = styled(Avatar, {
-  boxShadow: "$sm", // shadows.md
+  boxShadow: "$sm",
   variants: {
     cursor: {
       pointer: {

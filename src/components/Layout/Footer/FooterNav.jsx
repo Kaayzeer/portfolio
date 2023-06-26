@@ -1,6 +1,5 @@
 import React from "react";
 import { Text } from "@nextui-org/react";
-import { useRouter } from "next/router.js";
 import { navItems, removeHTags } from "../Navbar/navConstants";
 import * as styled from "./styles";
 

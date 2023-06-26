@@ -62,3 +62,8 @@ export const CardBody = {
     lineHeight: "3rem",
   },
 };
+
+export const GridContainer = {
+  padding: "$0",
+  margin: "$0",
+};

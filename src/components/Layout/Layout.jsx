@@ -7,24 +7,19 @@ const ysabeau = Ysabeau({ subsets: ["latin"] });
 
 import Navbar from "./Navbar/NavbarComp.jsx";
 import Footer from "./Footer/Footer.jsx";
+import { STRING_TYPES } from "../strings.js";
+import * as styled from "./styles.js";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Nikolas Portfolio</title>
-        <meta name="description" content="My portfolio" />
-        <meta
-          name="keywords"
-          content="Frontend developer, portfolio of works in related field with Html5, CSS3, JavaScript, Typescript, React.js and Next.js latest technologies"
-        />
+        <title>{STRING_TYPES.HEAD_TITLE}</title>
+        <meta name="description" content={STRING_TYPES.HEAD_DESCRIPTION} />
+        <meta name="keywords" content={STRING_TYPES.HEAD_KEYWORDS} />
       </Head>
       <Navbar />
-      <Text
-        as="main"
-        css={{ background: "$myPrimary" }}
-        className={`${ysabeau.className}`}
-      >
+      <Text as="main" css={styled.Main} className={`${ysabeau.className}`}>
         {children}
       </Text>
       <Footer />

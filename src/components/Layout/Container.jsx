@@ -1,17 +1,11 @@
 import React from "react";
 import { Container } from "@nextui-org/react";
-import {
-  ContainerFullWidthStyles,
-  FooterFullWidthStyles,
-  ContainerMaxWidthStyles,
-  ContainerNoPaddingMaxWidthStyles,
-  ExperienceContainerMaxWidthStyles,
-} from "../styles";
+import * as styled from "./styles.js";
 
 export const PageNoPaddingContainer = ({ children, cols, id }) => {
   return (
-    <Container id={id} fluid css={ContainerFullWidthStyles}>
-      <Container md css={ContainerNoPaddingMaxWidthStyles(cols)}>
+    <Container id={id} fluid css={styled.ContainerFullWidth}>
+      <Container md css={styled.ContainerNoPaddingMaxWidth(cols)}>
         {children}
       </Container>
     </Container>
@@ -20,8 +14,8 @@ export const PageNoPaddingContainer = ({ children, cols, id }) => {
 
 export const FooterContainer = ({ children, id, cols, bgColor }) => {
   return (
-    <Container id={id} fluid css={FooterFullWidthStyles(bgColor)}>
-      <Container md css={ContainerMaxWidthStyles(cols)}>
+    <Container id={id} fluid css={styled.FooterFullWidth(bgColor)}>
+      <Container md css={styled.ContainerMaxWidth(cols)}>
         {children}
       </Container>
     </Container>
@@ -30,8 +24,8 @@ export const FooterContainer = ({ children, id, cols, bgColor }) => {
 
 export const ExperienceContainer = ({ children, id }) => {
   return (
-    <Container id={id} fluid css={ContainerFullWidthStyles}>
-      <Container md css={ExperienceContainerMaxWidthStyles}>
+    <Container id={id} fluid css={styled.ContainerFullWidth}>
+      <Container md css={styled.ExperienceContainerMaxWidth}>
         {children}
       </Container>
     </Container>
@@ -40,8 +34,8 @@ export const ExperienceContainer = ({ children, id }) => {
 
 const PageContainer = ({ children, cols, id }) => {
   return (
-    <Container id={id} fluid css={ContainerFullWidthStyles}>
-      <Container md css={ContainerMaxWidthStyles(cols)}>
+    <Container id={id} fluid css={styled.ContainerFullWidth}>
+      <Container md css={styled.ContainerMaxWidth(cols)}>
         {children}
       </Container>
     </Container>

@@ -19,7 +19,6 @@ export const skillCards = {
       <Avatars>
         <I.TypescriptIcon />
       </Avatars>,
-
       <Avatars>
         <I.NodeIcon />
       </Avatars>,
@@ -34,7 +33,6 @@ export const skillCards = {
       <Avatars>
         <I.PostmanIcon />
       </Avatars>,
-
       <Avatars>
         <I.GitIcon />
       </Avatars>,

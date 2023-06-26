@@ -1,7 +1,7 @@
-export const ContainerFullWidthStyles = {
+export const ContainerFullWidth = {
   minWidth: "100%",
 };
-export const FooterFullWidthStyles = (bgColor) => {
+export const FooterFullWidth = (bgColor) => {
   return {
     minWidth: "100%",
     background: bgColor,
@@ -19,7 +19,7 @@ export const FooterFullWidthStyles = (bgColor) => {
   };
 };
 
-export const ContainerMaxWidthStyles = (cols = 2) => {
+export const ContainerMaxWidth = (cols = 2) => {
   return {
     display: "grid",
     placeItems: "center",
@@ -37,7 +37,7 @@ export const ContainerMaxWidthStyles = (cols = 2) => {
   };
 };
 
-export const ContainerNoPaddingMaxWidthStyles = (cols = 2) => {
+export const ContainerNoPaddingMaxWidth = (cols = 2) => {
   return {
     display: "grid",
     placeItems: "center",
@@ -50,7 +50,7 @@ export const ContainerNoPaddingMaxWidthStyles = (cols = 2) => {
   };
 };
 
-export const ExperienceContainerMaxWidthStyles = {
+export const ExperienceContainerMaxWidth = {
   display: "grid",
   placeItems: "center",
   gap: "1rem",
@@ -66,3 +66,5 @@ export const ExperienceContainerMaxWidthStyles = {
     padding: "6rem 7rem",
   },
 };
+
+export const Main = { background: "$myPrimary" };

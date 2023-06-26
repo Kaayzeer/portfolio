@@ -11,7 +11,7 @@ const Skills = () => {
         {STRING_TYPES.SKILLS_TITLE}
       </Text>
 
-      <Grid.Container gap={2} css={{ padding: "$0", margin: "$0" }}>
+      <Grid.Container gap={2} css={styled.GridContainer}>
         {Object.entries(skillCards).map((key) => {
           return (
             <Grid xs={12} sm={4} key={key[0]}>

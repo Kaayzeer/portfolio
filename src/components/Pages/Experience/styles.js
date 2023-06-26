@@ -99,4 +99,9 @@ export const Button = {
   letterSpacing: ".5px",
   fontWeight: 600,
   lineHeight: "2rem",
+  transition: "color .2s ease-in-out",
+  "&:hover": {
+    boxShadow: "$sm",
+    color: "$red800",
+  },
 };

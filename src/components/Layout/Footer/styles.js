@@ -12,6 +12,13 @@ export const A = {
   color: "$white",
   letterSpacing: "1px",
   fontWeight: 600,
+  transition: "borderBottom .4s ease-in-out",
+  "@sm": {
+    "&:hover": {
+      boxShadow: "$md",
+      borderBottom: "1px solid $mySecondary",
+    },
+  },
 };
 
 export const Footer = {
@@ -19,4 +26,11 @@ export const Footer = {
   display: "grid",
   placeItems: "center",
   gap: "1rem",
+};
+
+export const Body = {
+  color: "$mySecondary",
+  fontWeight: 500,
+  fontSize: "$4",
+  letterSpacing: "2px",
 };

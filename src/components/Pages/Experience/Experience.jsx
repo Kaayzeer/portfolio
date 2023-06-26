@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import Image from "next/image";
 import { Text } from "@nextui-org/react";
 import { experiences } from "./experiences";
-import { responsive } from "@/styles/styles";
+import { responsive } from "@/styles/responsive";
 import * as styled from "./styles";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import {

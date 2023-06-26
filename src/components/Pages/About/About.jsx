@@ -5,7 +5,7 @@ import { Text } from "@nextui-org/react";
 import PageContainer, {
   PageNoPaddingContainer,
 } from "@/components/Layout/Container";
-import { responsive } from "@/styles/styles";
+import { responsive } from "@/styles/responsive";
 import * as styled from "./styles";
 import { STRING_TYPES } from "@/components/strings";
 
