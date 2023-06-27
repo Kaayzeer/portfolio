@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import WorkingSpace from "../../../../public/images/working-space.jpg";
 import { Text } from "@nextui-org/react";
-import PageContainer, {
+import {
+  ExperienceContainer,
   PageNoPaddingContainer,
 } from "@/components/Layout/Container";
 import { responsive } from "@/styles/responsive";
@@ -19,7 +20,7 @@ const About = () => {
           </Text>
         </Text>
       </PageNoPaddingContainer>
-      <PageContainer>
+      <ExperienceContainer>
         <Text as="picture" css={styled.ImageContainer}>
           <Image
             src={WorkingSpace}
@@ -35,7 +36,7 @@ const About = () => {
           </Text>
           <Text>{STRING_TYPES.ABOUT_BODY}</Text>
         </Text>
-      </PageContainer>
+      </ExperienceContainer>
     </>
   );
 };

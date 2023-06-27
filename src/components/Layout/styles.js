@@ -58,6 +58,7 @@ export const ExperienceContainerMaxWidth = {
   padding: "3rem 0rem",
   "@xs": {
     padding: "5rem 7rem",
+    rowGap: "2.5rem",
   },
   "@sm": {
     gridTemplateColumns: `repeat(2,1fr)`,
