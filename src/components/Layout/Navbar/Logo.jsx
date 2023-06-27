@@ -1,4 +1,4 @@
-export const Logo = ({ color }) => (
+export const Logo = () => (
   <svg
     width="35"
     height="35"
@@ -7,7 +7,7 @@ export const Logo = ({ color }) => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <rect width="550" height="550" rx="275" fill="white" />
-    <circle cx="275" cy="275" r="250" fill={color} />
+    <circle cx="275" cy="275" r="250" fill="#D7CDDB " />
     <line
       x1="198.574"
       y1="36.7888"

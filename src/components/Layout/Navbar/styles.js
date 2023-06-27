@@ -1,6 +1,8 @@
 export const Navbar = {
-  $$navbarBackgroundColor: "transparent",
-  $$navbarBlurBackgroundColor: "transparent",
-  backdropFilter: "saturate(100%) blur(2px)",
+  "@xs": {
+    $$navbarBackgroundColor: "transparent",
+    $$navbarBlurBackgroundColor: "transparent",
+    backdropFilter: "saturate(100%) blur(2px)",
+  },
   position: "fixed",
 };

@@ -16,6 +16,10 @@ export const Heading = {
   fontWeight: 800,
   fontSize: "1.8rem",
   textAlign: "center",
+  paddingTop: "1.5rem",
+  "@xs": {
+    paddingTop: "0rem",
+  },
   "@sm": {
     fontSize: "2.2em",
     lineHeight: "2.5rem",
