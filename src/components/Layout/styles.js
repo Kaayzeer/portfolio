@@ -5,17 +5,7 @@ export const FooterFullWidth = (bgColor) => {
   return {
     minWidth: "100%",
     background: bgColor,
-    borderTopRightRadius: "5rem",
-    borderTopLeftRadius: "5rem",
     boxShadow: "0px -1px 30px -9px rgba(0,0,0,0.75)",
-    "@xs": {
-      borderTopRightRadius: "10rem",
-      borderTopLeftRadius: "10rem",
-    },
-    "@md": {
-      borderTopRightRadius: "20rem",
-      borderTopLeftRadius: "20rem",
-    },
   };
 };
 
