@@ -28,6 +28,7 @@ const isTabletReverseRow = (experience, index, isTabletL) => {
                 href={experience.linkHref}
                 css={styled.Button}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {experience.buttonText}
               </Text>
@@ -66,6 +67,7 @@ const isTabletReverseRow = (experience, index, isTabletL) => {
                 href={experience.linkHref}
                 css={styled.Button}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {experience.buttonText}
               </Text>

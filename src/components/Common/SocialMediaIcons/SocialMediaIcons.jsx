@@ -28,7 +28,7 @@ const SocialMediaIcons = ({ gap }) => {
       <Text as="div" css={styled.IconsWrapper(gap)}>
         {socialLinks.map((link) => (
           <Avatars key={link.alt} cursor="pointer">
-            <Link target="_blank" href={link.href}>
+            <Link target="_blank" rel="noopener noreferrer" href={link.href}>
               {link.title}
             </Link>
           </Avatars>
