@@ -8,7 +8,7 @@ import * as I from "@/components/Common/Icons";
 export const experiences = [
   {
     image: E_Commerce,
-    imageAlt: "Audiophile website image",
+    imageAlt: "Audiophile Website image",
     title: "E-commerce Website",
     body: "The Frontend UI of an e-commerce website, powered by the latest app directory and server components from Next and Redux for state management. Delivers a dynamic and efficient shopping experience. Its CMS backend is in development, driven by MongoDB, enables easy product management. Plus, it ensures secure transactions through Stripe checkout for customer peace of mind.",
     buttonText: "Product",
