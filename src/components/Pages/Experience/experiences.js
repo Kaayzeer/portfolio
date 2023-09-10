@@ -2,9 +2,22 @@ import BrickApp from "../../../../public/images/brick-app.png";
 import BrickWeb from "../../../../public/images/brick-website.png";
 import BrickDashBoard from "../../../../public/images/brick-dashboard.png";
 import NextVenture from "../../../../public/images/next-venture.png";
+import E_Commerce from "../../../../public/images/e-commerce.png";
 import * as I from "@/components/Common/Icons";
 
 export const experiences = [
+  {
+    image: E_Commerce,
+    imageAlt: "Audiophile website image",
+    title: "E-commerce Website",
+    body: "The Frontend UI of an e-commerce website, powered by the latest app directory and server components from Next and Redux for state management. Delivers a dynamic and efficient shopping experience. Its CMS backend is in development, driven by MongoDB, enables easy product management. Plus, it ensures secure transactions through Stripe checkout for customer peace of mind.",
+    buttonText: "Product",
+    buttonText2: "Code",
+    linkHref: "https://ecommerce.rosidev.com/",
+    linkHref2: "https://github.com/FaNi-Coding/e-commerce",
+    buttonIcon: <I.WorkIcon />,
+    buttonIcon2: <I.InfoIcon />,
+  },
   {
     image: BrickWeb,
     imageAlt: "Brick website image",

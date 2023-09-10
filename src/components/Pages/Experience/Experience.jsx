@@ -12,6 +12,7 @@ import {
 import { STRING_TYPES } from "@/components/strings";
 
 const isTabletReverseRow = (experience, index, isTabletL) => {
+  
   return (
     <Fragment key={experience.title}>
       {isTabletL && index % 2 !== 0 ? (
@@ -32,6 +33,7 @@ const isTabletReverseRow = (experience, index, isTabletL) => {
               >
                 {experience.buttonText}
               </Text>
+              
             </Text>
           </Text>
           <Text as="picture" css={styled.ImageContainer}>
@@ -60,6 +62,7 @@ const isTabletReverseRow = (experience, index, isTabletL) => {
               {experience.title}
             </Text>
             <Text>{experience.body}</Text>
+        
             <Text as="div" style={styled.ButtonWrapper}>
               {experience.buttonIcon}
               <Text
@@ -71,7 +74,22 @@ const isTabletReverseRow = (experience, index, isTabletL) => {
               >
                 {experience.buttonText}
               </Text>
+              {experience.title.includes('commerce') && ( 
+                <>     
+              {experience.buttonIcon2}
+              <Text
+                as="a"
+                href={experience.linkHref2}
+                css={styled.Button}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {experience.buttonText2}
+              </Text>
+              </>
+              )}
             </Text>
+          
           </Text>
         </>
       )}

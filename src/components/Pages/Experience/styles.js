@@ -92,7 +92,7 @@ export const ButtonWrapper = {
   display: "flex",
   alignItems: "center",
   gap: ".5rem",
-  width: "8rem",
+  width: "100%",
 };
 
 export const Button = {
