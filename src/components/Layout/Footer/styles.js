@@ -34,8 +34,9 @@ export const Footer = {
 };
 
 export const Body = {
-  color: "$mySecondary",
+  color: "$white",
   fontWeight: 500,
   fontSize: "$4",
   letterSpacing: "2px",
+  marginTop: '1rem'
 };

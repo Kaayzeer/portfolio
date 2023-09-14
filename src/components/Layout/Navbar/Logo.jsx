@@ -7,7 +7,7 @@ export const Logo = () => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <rect width="550" height="550" rx="275" fill="white" />
-    <circle cx="275" cy="275" r="250" fill="#D7CDDB " />
+    <circle cx="275" cy="275" r="250" fill="#2B441F" />
     <line
       x1="198.574"
       y1="36.7888"

@@ -39,7 +39,7 @@ export const CardHeading = {
   marginBottom: ".5rem",
   letterSpacing: "1px",
   fontSize: "1.125rem",
-  fontWeight: 500,
+  fontWeight: 600,
   boxShadow: "0 4px 6px -6px #222",
   "@sm": {
     lineHeight: "2rem",

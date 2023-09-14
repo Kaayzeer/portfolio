@@ -19,7 +19,7 @@ export const Greeting = {
   padding: ".25rem .5rem",
   borderRadius: ".5rem .5rem .5rem 0rem",
   background: "$mySecondary",
-  color: "$myTertiary",
+  color: "$white",
   fontSize: ".8rem",
   letterSpacing: "1px",
   "@md": {
@@ -61,8 +61,8 @@ export const TypeIt = {
   width: "fit-content",
   letterSpacing: "1px",
   fontSize: "1.125rem",
-  fontWeight: 600,
-  color: "grey",
+  fontWeight: 400,
+  color: "$myTertiary",
   "@lg": {
     fontSize: "1.25rem",
   },
