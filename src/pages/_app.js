@@ -6,9 +6,9 @@ const theme = createTheme({
   type: "light",
   theme: {
     colors: {
-      myPrimary: "#C8D5DB",
+      myPrimary: "#bcc9dc",
       mySecondary: "#2B441F",
-      myTertiary: "#323136",
+      myTertiary: "#0e131b",
     },
   },
 });
